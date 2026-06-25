@@ -9,29 +9,109 @@
 <body>
     <!--Menu geral-->
     <nav>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre mim</a>
-        <a href="formacao.html">Formação</a>
-        <a href="portfolio.html">Portfólio</a>
-        <a href="contato.html">Contato</a>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#formacao">Formação</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
 
-        <button onclick="trocarTema()">Trocar tema</button> <!--Botão de tema escuro/claro-->
+        <button id="tema" onclick="trocarTema()">Trocar tema</button> <!--Botão de tema escuro/claro-->
 
     </nav>
-    <!--Conteúdo do Index-->
-    <h1>Bem vindo ao meu site!</h1>
+    <!--Conteúdo do Início-->
+<h1>Bem vindo ao meu site!</h1>
     
+    <section id="inicio">
+
+    <h1>Bem-vindo ao meu site!</h1>
+
     <p>
         Esta é a página inicial do meu trabalho de HTML.
     </p>
-    <br><br><br>
+
+    <br><br>
+
     <p>
-        Vinicius Morira dos Santos
+        Vinicius Moreira dos Santos
         <br>
         RU: 5490398
     </p>
 
-    <script src="script.js"></script> <!--Direcionamento para o JS-->
-</body>
-</html>
-   
+</section>
+
+<hr>
+
+<section id="sobre">
+    <!--Conteúdo do Sobre-->
+    <h1>Sobre Mim</h1>
+
+    <p>
+        Meu nome é Vinicius Moreira Dos Santos e tenho 23 anos.
+        Gosto muito de programação e tecnologia.
+        Descobri este ano essa paixão e comecei a cursar
+        Análise e Desenvolvimento de Sistemas na Uninter.
+        Também estudo Python separadamente, que é minha linguagem favorita.
+    </p>
+
+</section>
+
+<hr>
+
+<section id="formacao">
+    <!--Conteúdo do Formação-->
+    <h1>Formação</h1>
+
+    <p>
+        • Cursando Análise e Desenvolvimento de Sistemas
+        <br>
+        • Cursando Programação Python
+        <br>
+        • Ensino Médio Completo
+    </p>
+
+</section>
+
+<hr>
+
+<section id="portfolio">
+    <!--Conteúdo do Portfólio-->
+    <h1>Portfólio</h1>
+
+    <p>
+        Ainda não possuo projetos próprios finalizados,
+        mas todo o meu aprendizado em Python está disponível no meu GitHub.
+    </p>
+
+    <a href="https://github.com/ViniciusMoreiraBIT" target="_blank"> <!--link do meu GitHub-->
+        GitHub
+    </a>
+
+</section>
+
+<hr>
+
+<section id="contato">
+
+    <h1>Contato</h1>
+
+    <div>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome"> <!--Caixinha do nome-->
+
+        <label for="email">Email</label>
+        <input type="email" id="email"> <!--Caixinha do email-->
+
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone"> <!--Caixinha do telefone-->
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem"></textarea> <!--Caixinha da mensagem-->
+
+    </div>
+
+    <button id="botão" onclick="enviar()">Enviar</button> <!--Botão de enviar (ligado com JS)-->
+
+</section>
+
+<script src="script.js"></script>
